@@ -23,7 +23,7 @@ public class ex01 {
 			data[1][i]=sum;
 		}
 		for(int i=0;i<n-1;i++){//data[1][n]先排序(sum)
-			for(int j=0;j<n-1;j++){
+			for(int j=0;j<n-1-i;j++){
 				if(data[1][j]>data[1][j+1]){
 					int tmp;
 					tmp=data[0][j];
@@ -51,10 +51,6 @@ public class ex01 {
 		for(int i=0;i<n;i++){//顯示
 			System.out.print(data[0][i]+"\t");
 		}
-		
-		
-		
-		
 	}
 	
 }
